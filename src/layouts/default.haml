@@ -1,8 +1,11 @@
 !!!
-%html
+%html.no-js
+
   %head
-    %title StaticMatic
+    %title Siyelo Software: Expert Ruby On Rails Consultancy
     = stylesheets
+    = javascripts('jquery-1.7.min', 'modernizr.custom')
+    
   %body
     = partial('../shared/header')
     = yield

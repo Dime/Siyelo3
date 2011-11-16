@@ -1,4 +1,46 @@
-body
-	font:
-		family: Verdana
-		size: 10pt
+
+//
+// Partials imports
+
+// Compass
+@import "compass/reset"
+@import "compass/utilities"
+@import "compass/css3"
+
+// SHARED styles
+@import partials/base
+@import partials/layout
+
+// HEADER styles
+@import partials/header
+
+// CONTENT styles
+@import partials/content
+
+// FOOTER styles
+@import partials/footer
+
+
+//
+// Custom colors
+$primary              : #20303f
+$secondary						: #333333
+
+
+//
+// Font-face
+
+// Avenir
+@font-face
+  font-family: 'Avenir'
+  src: url('../stylesheets/avenirltstd-medium-webfont.eot')
+  src: local('☺'), url('../stylesheets/avenirltstd-medium-webfont.woff') format('woff'), url('../stylesheets/avenirltstd-medium-webfont.ttf') format('truetype'), url('../stylesheets/avenirltstd-medium-webfont.svg#webfontS2cE5GsC') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Avenir Black'
+  src: url('stylesheets/avenirltstd-black-webfont.eot')
+  src: local('☺'), url('stylesheets/avenirltstd-black-webfont.woff') format('woff'), url('stylesheets/avenirltstd-black-webfont.ttf') format('truetype'), url('stylesheets/avenirltstd-black-webfont.svg#webfontS2cE5GsC') format('svg')
+  font-weight: normal
+  font-style: normal
